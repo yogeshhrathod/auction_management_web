@@ -1,0 +1,84 @@
+.list-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.452);
+  
+    .inner-box {
+      width: 100%;
+      max-width: 700px;
+      background-color: white;
+      border-radius: 5px;
+      .card-title {
+        padding: 10px;
+      }
+      .close {
+        right: 0;
+        color: rgba(184, 44, 44, 0.815);
+        float: right;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .close:hover {
+        color: red;
+      }
+    }
+  }
+  .list {
+    padding: 5px;
+    padding-left: 10px;
+    list-style: none;
+    margin: 2px;
+    overflow: auto;
+    max-height: 500px;
+    .name {
+      width: 40%;
+      margin: 0;
+      display: inline-block;
+      a,
+      a:active,
+      a:visited {
+        color: black;
+      }
+    }
+    .bid-amount {
+        
+      margin: 0;
+      display: inline;
+    }
+    .set-winner-button {
+        float: right;
+  
+      padding: 5px;
+      border: 0;
+      color: white;
+      border-radius: 4px;
+      margin-right: 5px;
+      margin-left: 10px;
+      background-color: #ddcd76;
+      cursor: pointer;
+    }
+  }
+  .winner{
+    background: green;
+    color: white;
+    border-radius: 5px;
+    float: right;
+    p{
+      margin: 0;
+      padding: 5px;
+    }
+  }
+  .show {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
+  

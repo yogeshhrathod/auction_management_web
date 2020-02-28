@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+.outerDiv {
+  margin-top: 78px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    margin-left: 60px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  .inner-container {
+    width: 100%;
+    max-width: 940px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .display-image {
+    //   margin: 0 30px;
+      max-width: 375px;
+
+      height: 400px;
+      object-fit: contain;
+      background-color: rgba(192, 190, 190, 0.21);
+      border-radius: 5px;
+    }
+ 
+    .info {
+
+      margin: 0 30px;
+      flex-direction: row;
+      border-radius: 5px;
+      max-width: 375px;
+      height: 400px;
+      padding: 10px;
+
+      p {
+        padding: 10px;
+      }
+
+      .bid-input {
+        font-size: 13pt;
+        width: 100px;
+
+        padding: 5px;
+        font-weight: 500;
+        margin-left: 10px;
+      }
+      .bid-button {
+        color: white;
+        background-color: #ddcd76;
+        font-weight: 500;
+        border: 0;
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .more-info {
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+        p {
+          font-size: 13pt;
+        }
+        .values {
+          font-weight: 500;
+        }
+      }
+      .imp {
+        font-weight: 500;
+      }
+      .multiple-info {
+        float: right;
+        .icon {
+          width: 17px;
+          cursor: pointer;
+        }
+        .dropdown-info {
+          border: 1px solid rgba(134, 134, 134, 0.253);
+          border-radius: 5px;
+          position: absolute;
+          width: 200px;
+          padding: 5px;
+          background: white;
+          font-size: 12px;
+          display: none;
+          font-weight: normal;
+        }
+        @media only screen and (max-width: 950px) {
+            .dropdown-info{
+                margin-left: -150px;
+            }
+          }
+      }
+      .multiple-info:hover .dropdown-info {
+        display: block;
+      }
+    }
+  }
+  .details {
+    width: 100%;
+    margin: 0 77px;
+    margin-top: 0;
+
+    p {
+      padding: 20px;
+      background-color: rgba(192, 190, 190, 0.21);
+      max-width: 940px;
+      border-radius: 5px;
+    }
+  }
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+

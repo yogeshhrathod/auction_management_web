@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+.outer-body {
+  display: flex;
+  justify-content: center;
+  .box {
+    margin: 20px;
+    border: 1px solid black;
+    width: 95%;
+    max-width: 600px;
+    text-align: center;
+  }
+}
+.ad-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .display-image {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 20px;
+    // object-fit: contain;
+    background-color: rgba(128, 128, 128, 0.199);
+    max-height: 330px;
+  }
+
+  .details {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    .name {
+      border: 0;
+      outline: 0;
+      background: transparent;
+      border-bottom: 2px solid black;
+      // margin: 20px;
+      font-size: 25px;
+      font-weight: bold;
+      width: 90%;
+    }
+  }
+  .item-info {
+    border: 0;
+    // outline: 0;
+    font-family: inherit;
+    background-color: rgba(128, 128, 128, 0.199);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 600px;
+    font-weight: 600;
+    // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    min-height: 255px;
+    width: 90%;
+    text-align: justify;
+    overflow: visible;
+    resize: none;
+  }
+}
+.other-details {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  .date-selector-block {
+    padding: 10px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 600;
+    width: 100%;
+    max-width: 600px;
+    input {
+      font-size: 12pt;
+      border: 1px solid black;
+      text-align: center;
+    }
+  }
+  .bid-price {
+    padding: 10px;
+    font-size: 12pt;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    .bid-price-label {
+      padding: 10px;
+    }
+    .bid-price-input {
+      margin: 5px;
+      padding: 5px;
+      font-size: 14pt;
+      max-width: 250px;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      border: 1px solid black;
+    }
+    .select-options {
+      padding: 5px;
+      font-size: 14pt;
+    }
+  }
+}
+.button-box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+  input {
+    font-size: 12pt;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px;
+    padding: 10px;
+  }
+  .add-button-bid {
+    min-width: 200px;
+    border: 0;
+    padding: 10px;
+    margin: 20px;
+    // padding: 10px 16px;
+    font-size: 12pt;
+    color: whitesmoke;
+    background-color: black;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .add-button-bid:hover {
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.19), 0 0px 6px rgba(0, 0, 0, 0.23);
+  }
+}
